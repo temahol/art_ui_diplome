@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.TestDodo" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-02-23T08:50:45" hostname="DESKTOP-T1L377U" time="38.261">
+  <properties/>
+  <testcase name="changeCity()" classname="tests.TestDodo" time="13.752"/>
+  <testcase name="choosePizzaSize()" classname="tests.TestDodo" time="4.953"/>
+  <testcase name="choose3Pizza()" classname="tests.TestDodo" time="7.227"/>
+  <testcase name="chooseSnack()" classname="tests.TestDodo" time="5.552"/>
+  <testcase name="chooseCookie()" classname="tests.TestDodo" time="5.511"/>
+  <testcase name="incorrectCity()" classname="tests.TestDodo" time="1.25"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 65211
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677142249.623][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+февр. 23, 2023 11:50:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+февр. 23, 2023 11:50:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+февр. 23, 2023 11:50:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+февр. 23, 2023 11:50:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for 100.0. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.3` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
