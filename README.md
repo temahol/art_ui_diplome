@@ -10,7 +10,7 @@
 - []
 - []
 
-## :bookmark_tabs :Stack of technologies
+## :bookmark_tabs: Stack of technologies
 
 <p  align="center">
 
@@ -27,3 +27,28 @@
 <code><img width="5%" title="Jira" src="media/logo/Jira.svg"></code>
 <code><img width="5%" title="Telegram" src="media/logo/Telegram.svg"></code>
 </p>
+
+## E2E Tests
+
+- City Selection Check
+- Checking for wrong city selection
+- Checking the choice of three pizzas
+- Dessert Selection Check
+- Checking the selection of snacks
+- Checking pizza size selection
+
+## :computer: Running tests from the terminal
+
+```bash
+gradle clean project_test
+```
+### Remote running tests
+
+'''bash
+clean
+project_test
+-Dremote=${SELENOID_URL}
+-Dbrowser_version=${BROWSER_VERSION}
+-Dbrowser=${BROWSER}
+-Dbrowser_size=${BROWSER_SIZE}
+'''
