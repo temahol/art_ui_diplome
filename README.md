@@ -71,6 +71,14 @@ When the assembly is completed, the allure report becomes available.
 
 ## <img width="4%" title="Allure TestOPS" src="media/logo/Allure_TO.svg"> Integration with [Allure TestOps](https://allure.autotests.cloud/launch/18709)
 
+## Test-cases
+
 <p align="center">
   <img src="media/testops.png" alt="testops" width="800">
+</p>
+
+## <img width="4%" title="Jira" src="media/logo/Jira.svg"> Integration with [Jira](https://jira.autotests.cloud/browse/HOMEWORK-490)
+
+<p align="center">
+  <img src="media/jira-project.png" alt="jira-project" width="800">
 </p>
