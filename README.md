@@ -55,8 +55,8 @@ project_test
 
 ## <img width="4%" title="Jenkins" src="media/logo/Jenkins_logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/pilulka/)
 
-First you need to click on the <code><strong>*Collect with parameters*</strong></code> button and set options. By clicking on the <code><strong>*Collect*</strong></code> button a build will be started.
+After completing all the settings, you need to click on the button <code><strong>*Собрать с параметрами*</strong></code> and build will be started.
 
 <p align="center">
-  <img src="media/jenkins.png" alt="Jenkins" width="800">
+  <img src="media/jenkins2.png" alt="Jenkins" width="800">
 </p>
