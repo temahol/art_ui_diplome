@@ -10,7 +10,7 @@
 - []
 - []
 
-## :Stack of technologies
+## :bookmark_tabs :Stack of technologies
 
 <p  align="center">
 
