@@ -10,7 +10,7 @@
 - []
 - []
 
-## :bookmark_tabs :Stack of technologies
+## :bookmark_tabs: Stack of technologies
 
 <p  align="center">
 
@@ -20,10 +20,43 @@
 <code><img width="5%" title="Gradle" src="media/logo/Gradle.svg"></code>
 <code><img width="5%" title="Selenide" src="media/logo/Selenide.svg"></code>
 <code><img width="5%" title="GitHub" src="media/logo/GitHub.svg"></code>
+<code><img width="5%" title="Jenkins" src="media/logo/Jenkins_logo.svg"></code>
 <code><img width="5%" title="Selenoid" src="media/logo/Selenoid.svg"></code>
 <code><img width="5%" title="Allure Report" src="media/logo/Allure.svg"></code>
 <code><img width="5%" title="Allure TestOps" src="media/logo/Allure_TO.svg"></code>
-<code><img width="5%" title="Jenkins" src="media/logo/Jenkins_logo.svg"></code>
 <code><img width="5%" title="Jira" src="media/logo/Jira.svg"></code>
 <code><img width="5%" title="Telegram" src="media/logo/Telegram.svg"></code>
+</p>
+
+## E2E Tests
+
+- City Selection Check
+- Checking for wrong city selection
+- Checking the choice of three pizzas
+- Dessert Selection Check
+- Checking the selection of snacks
+- Checking pizza size selection
+
+## :computer: Running tests from the terminal
+
+```bash
+gradle clean project_test
+```
+### Remote running tests
+
+```bash
+clean
+project_test
+-Dremote=${SELENOID_URL}
+-Dbrowser_version=${BROWSER_VERSION}
+-Dbrowser=${BROWSER}
+-Dbrowser_size=${BROWSER_SIZE}
+```
+
+## <img width="4%" title="Jenkins" src="media/logo/Jenkins_logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/pilulka/)
+
+First you need to click on the <code><strong>*Collect with parameters*</strong></code> button and set options. By clicking on the <code><strong>*Collect*</strong></code> button a build will be started.
+
+<p align="center">
+  <img src="media/jenkins.png" alt="Jenkins" width="800">
 </p>
