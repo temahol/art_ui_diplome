@@ -67,3 +67,13 @@ When the assembly is completed, the allure report becomes available.
 <p align="center">
   <img src="media/jenkins-allure.png" alt="jenkins-allure" width="900">
 </p>
+
+
+## <img width="4%" title="Allure TestOPS" src="media/logo/Allure_TO.svg"> Integration with [Allure TestOps](https://allure.autotests.cloud/launch/18709)
+
+## Main dashboard
+
+<p align="center">
+  <img src="media/testops.png" alt="testops" width="800">
+  <img src="media/testops2.png" alt="testops2" width="800">
+</p>
