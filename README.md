@@ -82,3 +82,10 @@ When the assembly is completed, the allure report becomes available.
 <p align="center">
   <img src="media/jira-project.png" alt="jira-project" width="800">
 </p>
+
+## <img width="4%" title="Telegram" src="media/logo/Telegram.svg"> Telegram notifications using a bot
+After passing all the tests, an automatic report is sent to the Telegram messenger
+
+<p align="center">
+<img title="Telegram Notifications" src="media/telegram2.png">
+</p>
