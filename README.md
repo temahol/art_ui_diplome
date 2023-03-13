@@ -1,5 +1,5 @@
 ## Automated tests for https://dodopizza.ru/
-
+<a name="Ссылка"></a>
 ## Content
 
 - [Stack of technologies](#stack-of-technologies)
@@ -89,3 +89,5 @@ After passing all the tests, an automatic report is sent to the <code>Telegram</
 <p align="center">
 <img title="Telegram Notifications" src="media/telegram2.png" width="500">
 </p>
+
+[Вернуться к оглавлению ⬆](#Ссылка)
