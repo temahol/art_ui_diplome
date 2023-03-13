@@ -61,3 +61,9 @@ When the assembly is completed, the allure report becomes available.
 <p align="center">
   <img src="media/jenkins2.png" alt="Jenkins" width="800">
 </p>
+
+## <img width="4%" title="Allure Report" src="media/logo/Allure.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/pilulka/30/allure/)
+
+<p align="center">
+  <img src="media/оутлшты-allure.png" alt="allure-report1" width="900">
+</p>
