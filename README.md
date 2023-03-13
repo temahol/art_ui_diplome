@@ -56,6 +56,7 @@ project_test
 ## <img width="4%" title="Jenkins" src="media/logo/Jenkins_logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/pilulka/)
 
 After completing all the settings, you need to click on the button <code><strong>*Собрать с параметрами*</strong></code> and build will be started.
+When the assembly is completed, the allure report becomes available.
 
 <p align="center">
   <img src="media/jenkins2.png" alt="Jenkins" width="800">
