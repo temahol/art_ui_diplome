@@ -44,11 +44,11 @@ gradle clean project_test
 ```
 ### Remote running tests
 
-'''bash
+```bash
 clean
 project_test
 -Dremote=${SELENOID_URL}
 -Dbrowser_version=${BROWSER_VERSION}
 -Dbrowser=${BROWSER}
 -Dbrowser_size=${BROWSER_SIZE}
-'''
+```
