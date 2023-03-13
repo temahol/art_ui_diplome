@@ -84,8 +84,8 @@ When the assembly is completed, the allure report becomes available.
 </p>
 
 ## <img width="4%" title="Telegram" src="media/logo/Telegram.svg"> Telegram notifications using a bot
-After passing all the tests, an automatic report is sent to the Telegram messenger
+After passing all the tests, an automatic report is sent to the <code>Telegram</code> messenger
 
 <p align="center">
-<img title="Telegram Notifications" src="media/telegram2.png">
+<img title="Telegram Notifications" src="media/telegram2.png" width="500">
 </p>
