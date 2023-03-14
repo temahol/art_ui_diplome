@@ -4,11 +4,12 @@
 
 - <a href="#tools">Stack of technologies</a>
 - <a href="#tests">List of checks</a>
-- []
-- []
-- []
-- []
-- []
+- <a href="#run">Running tests from the terminal</a>
+- <a href="#remote">Remote running tests</a>
+- <a href="#jenkins-report">Running tests in Jenkins</a>
+- <a href="#allure-report">Test results report in Allure Report</a>
+- <a href="#allure-testops">Integration with Allure TestOps</a>
+- <a href="#tests">List of checks</a>
 
 <a id="tools"></a>
 ## :bookmark_tabs: Stack of technologies
@@ -40,11 +41,14 @@
 - [x] Checking the selection of snacks
 - [x] Checking pizza size selection
 
+<a id="run"></a>
 ## :computer: Running tests from the terminal
 
 ```bash
 gradle clean project_test
 ```
+
+<a id="remote"></a>
 ### Remote running tests
 
 ```bash
@@ -56,6 +60,7 @@ project_test
 -Dbrowser_size=${BROWSER_SIZE}
 ```
 
+<a id="jenkins-report"></a>
 ## <img width="4%" title="Jenkins" src="media/logo/Jenkins_logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/pilulka/)
 
 After completing all the settings, you need to click on the button <code><strong>*Собрать с параметрами*</strong></code> and build will be started.
@@ -65,13 +70,15 @@ When the assembly is completed, the allure report becomes available.
   <img src="media/jenkins2.png" alt="Jenkins" width="800">
 </p>
 
+
+<a id="allure-report"></a>
 ## <img width="4%" title="Allure Report" src="media/logo/Allure.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/pilulka/30/allure/)
 
 <p align="center">
   <img src="media/jenkins-allure.png" alt="jenkins-allure" width="900">
 </p>
 
-
+<a id="allure-testops"></a>
 ## <img width="4%" title="Allure TestOPS" src="media/logo/Allure_TO.svg"> Integration with [Allure TestOps](https://allure.autotests.cloud/launch/18709)
 
 ## Test-cases
