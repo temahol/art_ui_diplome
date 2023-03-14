@@ -9,7 +9,8 @@
 - <a href="#jenkins-report">Running tests in Jenkins</a>
 - <a href="#allure-report">Test results report in Allure Report</a>
 - <a href="#allure-testops">Integration with Allure TestOps</a>
-- <a href="#tests">List of checks</a>
+- <a href="#jira">Integration with Jira</a>
+- <a href="#telegram">Integration with Telegram</a>
 
 <a id="tools"></a>
 ## :bookmark_tabs: Stack of technologies
@@ -87,12 +88,14 @@ When the assembly is completed, the allure report becomes available.
   <img src="media/testops.png" alt="testops" width="800">
 </p>
 
+<a id="jira"></a>
 ## <img width="4%" title="Jira" src="media/logo/Jira.svg"> Integration with [Jira](https://jira.autotests.cloud/browse/HOMEWORK-490)
 
 <p align="center">
   <img src="media/jira-project.png" alt="jira-project" width="800">
 </p>
 
+<a id="telegram"></a>
 ## <img width="4%" title="Telegram" src="media/logo/Telegram.svg"> Telegram notifications using a bot
 After passing all the tests, an automatic report is sent to the <code>Telegram</code> messenger
 
