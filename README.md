@@ -3,7 +3,7 @@
 ## Content
 
 - [Stack of technologies](#stack-of-technologies)
-- []
+- [List of checks](#bookmark-list-of-checks)
 - []
 - []
 - []
@@ -28,6 +28,7 @@
 <code><img width="5%" title="Telegram" src="media/logo/Telegram.svg"></code>
 </p>
 
+## :bookmark_tabs: List of checks:
 ## E2E Tests
 
 - City Selection Check
