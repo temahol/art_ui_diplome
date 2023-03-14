@@ -2,14 +2,15 @@
 <a name="Ссылка"></a>
 ## Content
 
-- [Stack of technologies](#stack-of-technologies)
-- [List of checks](#bookmark-list-of-checks)
+- <a href="#tools">Stack of technologies</a>
+- <a href="#tests">List of checks</a>
 - []
 - []
 - []
 - []
 - []
 
+<a id="tools"></a>
 ## :bookmark_tabs: Stack of technologies
 
 <p  align="center">
@@ -28,15 +29,16 @@
 <code><img width="5%" title="Telegram" src="media/logo/Telegram.svg"></code>
 </p>
 
+<a id="tests"></a>
 ## :bookmark_tabs: List of checks:
 ## E2E Tests
 
-- City Selection Check
-- Checking for wrong city selection
-- Checking the choice of three pizzas
-- Dessert Selection Check
-- Checking the selection of snacks
-- Checking pizza size selection
+- [x] City Selection Check
+- [x] Checking for wrong city selection
+- [x] Checking the choice of three pizzas
+- [x] Dessert Selection Check
+- [x] Checking the selection of snacks
+- [x] Checking pizza size selection
 
 ## :computer: Running tests from the terminal
 
