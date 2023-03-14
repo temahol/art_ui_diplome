@@ -13,7 +13,7 @@
 - <a href="#telegram">Integration with Telegram</a>
 
 <a id="tools"></a>
-## :bookmark_tabs: Stack of technologies
+## :technologist: Stack of technologies
 
 <p  align="center">
 
