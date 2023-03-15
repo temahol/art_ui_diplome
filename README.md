@@ -11,6 +11,8 @@
 - <a href="#allure-testops">Integration with Allure TestOps</a>
 - <a href="#jira">Integration with Jira</a>
 - <a href="#telegram">Integration with Telegram</a>
+- <a href="#selenoid">Test video</a>
+
 
 <a id="tools"></a>
 ## :computer: Stack of technologies
@@ -105,12 +107,13 @@ After passing all the tests, an automatic report is sent to the <code>Telegram</
 <img title="Telegram Notifications" src="media/telegram2.png" width="500">
 </p>
 
-## <img width="4%" title="Selenoid" src="media/logo/Selenoid.svg"> Test running example in Selenoid
 
+<a id="selenoid"></a>
+## <img width="4%" title="Selenoid" src="media/logo/Selenoid.svg"> Test running example in Selenoid
 A video is attached to each test in the report.
 
 <p align="center">
-  <img title="Selenoid Video" src="media/video/test.mp4">
+  <img title="Selenoid Video" src="media/video/test.gif">
 </p>
 
 [Вернуться к оглавлению ⬆](#Ссылка)
