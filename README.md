@@ -105,4 +105,12 @@ After passing all the tests, an automatic report is sent to the <code>Telegram</
 <img title="Telegram Notifications" src="media/telegram2.png" width="500">
 </p>
 
+## <img width="4%" title="Selenoid" src="media/logo/Selenoid.svg"> Test running example in Selenoid
+
+A video is attached to each test in the report.
+
+<p align="center">
+  <img title="Selenoid Video" src="media/video/test.mp4">
+</p>
+
 [Вернуться к оглавлению ⬆](#Ссылка)
