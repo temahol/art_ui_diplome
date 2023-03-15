@@ -17,12 +17,11 @@ public class TestBase {
     static void beforeAll() {
 
         Configuration.baseUrl = "https://dodopizza.ru";
-        Configuration.browser =System.getProperty("browser", "chrome");
-        Configuration.browserVersion =System.getProperty("browser_version", "100.0");
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("browser_version", "100.0");
         Configuration.browserSize = System.getProperty("browser_size", "1920x1980");
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         Configuration.remote = System.getProperty("remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(

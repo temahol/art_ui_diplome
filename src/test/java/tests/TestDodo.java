@@ -7,6 +7,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import utils.RandomData;
+
 import static io.qameta.allure.Allure.step;
 
 public class TestDodo extends TestBase {
@@ -29,8 +30,6 @@ public class TestDodo extends TestBase {
         step("check incorrect Town", () -> {
             elements.checkIncorrectTown();
         });
-
-
     }
 
     @Test
@@ -53,8 +52,6 @@ public class TestDodo extends TestBase {
         step("check City" + randomData.town, () -> {
             elements.checkCity(randomData.town);
         });
-
-
     }
 
     @Test
@@ -120,7 +117,6 @@ public class TestDodo extends TestBase {
         step("check snack" + randomData.snack, () -> {
             elements.checkBasket(randomData.snack);
         });
-
     }
 
     @Test
@@ -165,7 +161,7 @@ public class TestDodo extends TestBase {
         step("check City" + randomData.city, () -> {
             elements.checkCity(randomData.city);
         });
-        step("select pizza with options" +randomData.firstPizza + randomData.pizzaSize + randomData.dough , () -> {
+        step("select pizza with options" + randomData.firstPizza + randomData.pizzaSize + randomData.dough, () -> {
             elements.selectPizzaWithOptions(randomData.firstPizza, randomData.pizzaSize, randomData.dough);
         });
     }

@@ -1,10 +1,10 @@
 package helpers;
 
 import com.codeborne.selenide.SelenideElement;
-
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.byXpath;
+import static com.codeborne.selenide.Selenide.$;
 
 public class Elements {
 
@@ -12,10 +12,10 @@ public class Elements {
     private SelenideElement
             selectCity = $("[placeholder='Поиск...']"),
             checkCity = $("a.header__about-slogan-text"),
-            addToOrder =  $("button[data-testid=button_add_to_cart]"),
-            basket =  $("button[data-testid=navigation__cart]"),
-            basketCheck =  $(".undefined__view"),
-            modalTownsChoose =  $(".locality-selector-popup");
+            addToOrder = $("button[data-testid=button_add_to_cart]"),
+            basket = $("button[data-testid=navigation__cart]"),
+            basketCheck = $(".undefined__view"),
+            modalTownsChoose = $(".locality-selector-popup");
 
 
     public Elements checkIncorrectTown() {
@@ -66,6 +66,7 @@ public class Elements {
 
         return this;
     }
+
     public Elements addToBasket(String value) {
         $(byText(value)).click();
         $(byXpath("//button[@class='sc-1rmt3mq-0 cpUbDl sc-18frhrp-3 guiMAG']")).click();
@@ -74,12 +75,11 @@ public class Elements {
     }
 
 
-
     public Elements selectPizzaWithOptions(String value, Integer a, String b) {
 
         $(byText(value)).click();
         $("label[data-testid=menu__pizza_size_" + a + "]").click();
-        $(byXpath("//label[text()='" + b +"']")).click();
+        $(byXpath("//label[text()='" + b + "']")).click();
         addToOrder.click();
 
         return this;
