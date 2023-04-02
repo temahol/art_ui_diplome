@@ -8,6 +8,7 @@ public class RandomData {
     Faker faker = new Faker();
     public String snacks = "Закуски";
     public String cookies = "Десерты";
+    public String aboutUs = "О нас";
     public String city = faker.options().option("Москва", "Таганрог", "Санкт-Петербург", "Абакан");
     public String town = faker.options().option("Москва", "Таганрог", "Санкт-Петербург", "Абакан");
     public String incorrectTown = faker.options().option("Новый город");

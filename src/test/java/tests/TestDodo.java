@@ -165,4 +165,48 @@ public class TestDodo extends TestBase {
             elements.selectPizzaWithOptions(randomData.firstPizza, randomData.pizzaSize, randomData.dough);
         });
     }
+
+    @Test
+    @Tag("project")
+    public void aboutUs() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
+        step("Open the main page of DoDo", () -> {
+            pages.openPage();
+        });
+        step("select correct City" + randomData.city, () -> {
+            elements.choozeCity(randomData.city);
+        });
+        step("check City" + randomData.city, () -> {
+            elements.checkCity(randomData.city);
+        });
+        step("select item from header menu" + randomData.cookies, () -> {
+            elements.selectHeaderTab(randomData.aboutUs);
+        });
+        step("check About Us", () -> {
+            elements.checkAboutUS();
+        });
+    }
+
+    @Test
+    @Tag("project")
+    public void dodoCoins() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
+        step("Open the main page of DoDo", () -> {
+            pages.openPage();
+        });
+        step("select correct City" + randomData.city, () -> {
+            elements.choozeCity(randomData.city);
+        });
+        step("check City" + randomData.city, () -> {
+            elements.checkCity(randomData.city);
+        });
+        step("select item from header menu" + randomData.cookies, () -> {
+            elements.selectCoins();
+        });
+        step("check dodoCoins", () -> {
+            elements.checkCoins();
+        });
+    }
 }

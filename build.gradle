@@ -39,12 +39,12 @@ test {
 }
 
 tasks.withType(Test) {
-    systemProperties(System.getProperties())
+//    systemProperties(System.getProperties())
     useJUnitPlatform()
 }
 
-task project_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("project")
-    }
-}
+//task project_test(type: Test) {
+//    useJUnitPlatform {
+//        includeTags("project")
+//    }
+//}

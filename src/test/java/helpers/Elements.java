@@ -1,6 +1,7 @@
 package helpers;
 
 import com.codeborne.selenide.SelenideElement;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selectors.byXpath;
@@ -15,7 +16,10 @@ public class Elements {
             addToOrder = $("button[data-testid=button_add_to_cart]"),
             basket = $("button[data-testid=navigation__cart]"),
             basketCheck = $(".undefined__view"),
-            modalTownsChoose = $(".locality-selector-popup");
+            modalTownsChoose = $(".locality-selector-popup"),
+            aboutCheck = $(".container"),
+            checkDodoCoins = $(".applink"),
+            selectCoins = $("a.sc-2c0aw7-0");
 
 
     public Elements checkIncorrectTown() {
@@ -81,6 +85,24 @@ public class Elements {
         $("label[data-testid=menu__pizza_size_" + a + "]").click();
         $(byXpath("//label[text()='" + b + "']")).click();
         addToOrder.click();
+
+        return this;
+    }
+
+    public Elements checkAboutUS() {
+        aboutCheck.shouldHave(text("Мы"));
+
+        return this;
+    }
+
+    public Elements selectCoins() {
+        selectCoins.pressEnter();
+
+        return this;
+    }
+
+    public Elements checkCoins() {
+        checkDodoCoins.shouldHave(text("Скачать приложение по QR-коду"));
 
         return this;
     }
