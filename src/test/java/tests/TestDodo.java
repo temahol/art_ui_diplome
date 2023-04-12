@@ -16,8 +16,10 @@ public class TestDodo extends TestBase {
     Elements elements = new Elements();
     RandomData randomData = new RandomData();
 
+    public static String env = System.getProperty("env");
+
     @Test
-    @Tag("project")
+    @Tag("project1")
     public void incorrectCity() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
