@@ -3,7 +3,8 @@ package config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:${env}.properties"
+        "classpath:${env}.properties",
+        "classpath:local.properties"
 })
 
 public interface MobileConfig extends Config {
@@ -27,5 +28,4 @@ public interface MobileConfig extends Config {
     @Key("browserSize")
     @DefaultValue("1920x1980")
     String getBrowserSize();
-
 }

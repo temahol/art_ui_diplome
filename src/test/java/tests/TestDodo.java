@@ -3,6 +3,7 @@ package tests;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import helpers.Elements;
 import helpers.Pages;
+import io.qameta.allure.Owner;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -12,10 +13,8 @@ import static io.qameta.allure.Allure.step;
 
 public class TestDodo extends TestBase {
 
-    public static String env = System.getProperty("env");
-
     @Test
-    @Tag("project1")
+    @Tag("project")
     public void incorrectCity() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 

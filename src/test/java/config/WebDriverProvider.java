@@ -6,35 +6,30 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class WebDriverProvider {
 
-    private MobileConfig config;
+    private static MobileConfig config;
 
     public WebDriverProvider() {
-        this.config = ConfigFactory.create(MobileConfig.class, System.getProperties());
-        createWebDriver();
+         config = ConfigFactory.create(MobileConfig.class, System.getProperties());
     }
 
-    private void createWebDriver() {
-        switch (config.getBrowser().toLowerCase()) {
-            case "chrome":
-                Configuration.browser = "chrome";
-                break;
-            case "firefox":
-                Configuration.browser = "firefox";
-                break;
-            default:
-                throw new RuntimeException(config.getBrowser());
+    public static void createWebDriver() {
+
+        Configuration.baseUrl = WebDriverProvider.config.getBaseUrl();
+        Configuration.browser = WebDriverProvider.config.getBrowser();
+        Configuration.browserVersion = WebDriverProvider.config.getBrowserVersion();
+        Configuration.browserSize = WebDriverProvider.config.getBrowserSize();
+        String remote = WebDriverProvider.config.getRemoteUrl();
+
+        if (remote != null) {
+            Configuration.remote = remote;
         }
 
-        Configuration.baseUrl = config.getBaseUrl();
-        Configuration.browser = config.getBrowser();
-        Configuration.browserVersion = config.getBrowserVersion();
-        Configuration.remote = config.getRemoteUrl();
-        Configuration.browserSize = config.getBrowserSize();
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
-
-//        Configuration.browserCapabilities = capabilities;
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            Configuration.browserCapabilities = capabilities;
+            capabilities.setCapability("enableVNC", true);
+            capabilities.setCapability("enableVideo", true);
+        }
     }
-}
+
+
