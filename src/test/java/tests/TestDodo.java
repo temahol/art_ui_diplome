@@ -12,10 +12,6 @@ import static io.qameta.allure.Allure.step;
 
 public class TestDodo extends TestBase {
 
-    Pages pages = new Pages();
-    Elements elements = new Elements();
-    RandomData randomData = new RandomData();
-
     public static String env = System.getProperty("env");
 
     @Test

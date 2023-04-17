@@ -14,16 +14,16 @@ public class WebDriverProvider {
     }
 
     private void createWebDriver() {
-//        switch (config.getBrowser().toLowerCase()) {
-//            case "chrome":
-//                Configuration.browser = "chrome";
-//                break;
-//            case "firefox":
-//                Configuration.browser = "firefox";
-//                break;
-//            default:
-//                throw new RuntimeException(config.getBrowser());
-//        }
+        switch (config.getBrowser().toLowerCase()) {
+            case "chrome":
+                Configuration.browser = "chrome";
+                break;
+            case "firefox":
+                Configuration.browser = "firefox";
+                break;
+            default:
+                throw new RuntimeException(config.getBrowser());
+        }
 
         Configuration.baseUrl = config.getBaseUrl();
         Configuration.browser = config.getBrowser();
@@ -35,6 +35,6 @@ public class WebDriverProvider {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
 
-        Configuration.browserCapabilities = capabilities;
+//        Configuration.browserCapabilities = capabilities;
     }
 }
