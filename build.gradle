@@ -19,6 +19,9 @@ allure {
         }
     }
 }
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
 
 repositories {
     mavenCentral()
@@ -26,12 +29,11 @@ repositories {
 
 dependencies {
     testImplementation(
-            'org.junit.jupiter:junit-jupiter-api:5.8.1',
-            'com.codeborne:selenide:6.4.0',
+            'org.junit.jupiter:junit-jupiter:5.9.2',
+            'com.codeborne:selenide:6.12.3',
             'com.github.javafaker:javafaker:1.0.2',
-            'io.qameta.allure:allure-selenide:2.20.1'
+            'io.qameta.allure:allure-selenide:2.21.0'
     )
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
 test {
@@ -39,12 +41,12 @@ test {
 }
 
 tasks.withType(Test) {
-//    systemProperties(System.getProperties())
+    systemProperties(System.getProperties())
     useJUnitPlatform()
 }
 
-//task project_test(type: Test) {
-//    useJUnitPlatform {
-//        includeTags("project")
-//    }
-//}
+task project_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("project")
+    }
+}
