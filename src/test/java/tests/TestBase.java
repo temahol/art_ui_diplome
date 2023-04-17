@@ -27,11 +27,13 @@ public class TestBase {
         WebDriverProvider.createWebDriver();
 //    WebDriverProvider provider = new WebDriverProvider();
     }
+
     @BeforeEach
     static void beforeEach() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
     }
+
     @AfterEach
     void addAttachments() {
         AttachmentsTest.browserConsoleLogs();
