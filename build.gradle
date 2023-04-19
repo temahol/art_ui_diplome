@@ -35,8 +35,7 @@ dependencies {
             'com.github.javafaker:javafaker:1.0.2',
             'org.aeonbits.owner:owner:1.0.12',
             'io.qameta.allure:allure-selenide:2.21.0',
-            'org.aspectj:aspectjweaver:1.9.19',
-            'org.aspectj:aspectjweaver:1.9.8.M1'
+            'org.aspectj:aspectjweaver:1.9.19'
     )
 }
 

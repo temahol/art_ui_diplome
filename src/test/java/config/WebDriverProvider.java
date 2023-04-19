@@ -6,12 +6,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class WebDriverProvider {
 
-//    private static MobileConfig config;
-//
-//    public WebDriverProvider() {
-//         config = ConfigFactory.create(MobileConfig.class, System.getProperties());
-//    }
-
     public static MobileConfig config = ConfigFactory.create(MobileConfig.class, System.getProperties());
 
     public static void createWebDriver() {
@@ -27,11 +21,11 @@ public class WebDriverProvider {
         }
 
 
-            DesiredCapabilities capabilities = new DesiredCapabilities();
-            Configuration.browserCapabilities = capabilities;
-            capabilities.setCapability("enableVNC", true);
-            capabilities.setCapability("enableVideo", true);
-        }
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        Configuration.browserCapabilities = capabilities;
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", true);
     }
+}
 
 

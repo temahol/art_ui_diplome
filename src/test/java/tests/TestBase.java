@@ -25,7 +25,6 @@ public class TestBase {
     @BeforeAll
     public static void setUp() {
         WebDriverProvider.createWebDriver();
-//    WebDriverProvider provider = new WebDriverProvider();
     }
 
     @BeforeEach
