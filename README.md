@@ -1,4 +1,8 @@
-## Automated tests for https://dodopizza.ru/
+## Automated tests for
+<p align="center">
+  <img src="media/dodologo.webp" alt="Jenkins" width="800">
+</p>
+
 <a name="Ссылка"></a>
 ## Content
 
