@@ -43,6 +43,8 @@
 - [x] Dessert Selection Check
 - [x] Checking the selection of snacks
 - [x] Checking pizza size selection
+- [x] Checking AboutUs section
+- [x] Checking DodoCoins section
 
 <a id="run"></a>
 ## :computer: Running tests from the terminal
