@@ -1,6 +1,8 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -8,6 +10,7 @@ import utils.AttachmentsTest;
 
 import java.util.Map;
 
+import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.webdriver;
 import static io.qameta.allure.Allure.attachment;
 
@@ -32,10 +35,12 @@ public class TestBase {
 
     @AfterEach
     void addAttachments() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
         AttachmentsTest.browserConsoleLogs();
         AttachmentsTest.addVideo();
         AttachmentsTest.screenAttach();
         attachment("Source", webdriver().driver().source());
+        closeWebDriver();
     }
 
 }

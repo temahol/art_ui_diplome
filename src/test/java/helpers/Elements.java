@@ -34,7 +34,7 @@ public class Elements {
         return this;
     }
 
-    public Elements choozeCity(String value) {
+    public Elements chooseCity(String value) {
         selectCity.setValue(value).pressEnter();
 
         return this;

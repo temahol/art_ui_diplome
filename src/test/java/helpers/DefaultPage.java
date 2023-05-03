@@ -2,9 +2,9 @@ package helpers;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class Pages {
+public class DefaultPage {
 
-    public Pages openPage() {
+    public DefaultPage openPage() {
         open("https://dodopizza.ru");
         return this;
     }
