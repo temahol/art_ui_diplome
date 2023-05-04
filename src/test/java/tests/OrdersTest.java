@@ -6,6 +6,8 @@ import helpers.DefaultPage;
 import helpers.OrderPage;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import utils.ChoiceSnack;
+import utils.ChoiceThirdPizza;
 import utils.RandomData;
 
 import static io.qameta.allure.Allure.step;
@@ -21,6 +23,7 @@ public class OrdersTest extends TestBase {
 
     @Test
     public void choose3Pizza() {
+        String randomThirdPizza = ChoiceThirdPizza.randomPizza().getPizza();
 
         step("Open the main page of DoDo", () -> {
             defaultPage.openPage();
@@ -37,8 +40,8 @@ public class OrdersTest extends TestBase {
         step("select second pizza" + randomData.secondPizza, () -> {
             orderPage.selectFood(randomData.secondPizza);
         });
-        step("select third pizza" + randomData.thirdPizza, () -> {
-            orderPage.selectFood(randomData.thirdPizza);
+        step("select third pizza" + randomThirdPizza, () -> {
+            orderPage.selectFood(randomThirdPizza);
         });
         step("select Basket", () -> {
             basketPage.selectBasket();
@@ -49,13 +52,14 @@ public class OrdersTest extends TestBase {
         step("check second Pizza" + randomData.secondPizza, () -> {
             basketPage.checkBasket(randomData.secondPizza);
         });
-        step("check third Pizza" + randomData.thirdPizza, () -> {
-            basketPage.checkBasket(randomData.thirdPizza);
+        step("check third Pizza" + randomThirdPizza, () -> {
+            basketPage.checkBasket(randomThirdPizza);
         });
     }
 
     @Test
     public void chooseSnack() {
+        String randomSnack = ChoiceSnack.randomSnack().getSnack();
 
         step("Open the main page of DoDo", () -> {
             defaultPage.openPage();
@@ -66,17 +70,17 @@ public class OrdersTest extends TestBase {
         step("check City" + randomData.city, () -> {
             countryList.checkCity(randomData.city);
         });
-        step("select item from header menu" + randomData.snacks, () -> {
-            orderPage.selectHeaderTab(randomData.snacks);
+        step("select item from header menu" + randomSnack, () -> {
+            orderPage.selectHeaderTab(randomSnack);
         });
-        step("add shack to Basket" + randomData.snack, () -> {
-            basketPage.addToBasket(randomData.snack);
+        step("add shack to Basket" + randomSnack, () -> {
+            basketPage.addToBasket(randomSnack);
         });
         step("select Basket", () -> {
             basketPage.selectBasket();
         });
-        step("check snack" + randomData.snack, () -> {
-            basketPage.checkBasket(randomData.snack);
+        step("check snack" + randomSnack, () -> {
+            basketPage.checkBasket(randomSnack);
         });
     }
 

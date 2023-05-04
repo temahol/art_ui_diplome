@@ -32,11 +32,11 @@ public class CityTest extends TestBase {
 
     @Test
     public void changeCity() {
+        String randomCity = ChoiceCity.randomCity().getCity();
 
         step("Open the main page of DoDo", () -> {
             defaultPage.openPage();
         });
-        String randomCity = ChoiceCity.randomCity().getCity();
         step("select correct City" + randomCity, () -> {
             countryList.chooseCity(randomCity);
         });
