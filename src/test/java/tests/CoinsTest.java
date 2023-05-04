@@ -1,7 +1,7 @@
 package tests;
 
 import helpers.CoinsPage;
-import helpers.CountryList;
+import helpers.CountryListPage;
 import helpers.DefaultPage;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,7 @@ import static io.qameta.allure.Allure.step;
 public class CoinsTest extends TestBase {
 
     DefaultPage defaultPage = new DefaultPage();
-    CountryList countryList = new CountryList();
+    CountryListPage countryListPage = new CountryListPage();
     CoinsPage coinsPage = new CoinsPage();
     RandomData randomData = new RandomData();
 
@@ -24,10 +24,10 @@ public class CoinsTest extends TestBase {
             defaultPage.openPage();
         });
         step("select correct City" + randomData.city, () -> {
-            countryList.chooseCity(randomData.city);
+            countryListPage.chooseCity(randomData.city);
         });
         step("check City" + randomData.city, () -> {
-            countryList.checkCity(randomData.city);
+            countryListPage.checkCity(randomData.city);
         });
         step("select item from header menu" + randomData.cookies, () -> {
             coinsPage.selectCoins();

@@ -1,6 +1,6 @@
 package tests;
 
-import helpers.CountryList;
+import helpers.CountryListPage;
 import helpers.DefaultPage;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,7 @@ import static io.qameta.allure.Allure.step;
 public class CityTest extends TestBase {
 
     DefaultPage defaultPage = new DefaultPage();
-    CountryList countryList = new CountryList();
+    CountryListPage countryListPage = new CountryListPage();
     RandomData randomData = new RandomData();
 
     @Test
@@ -23,10 +23,10 @@ public class CityTest extends TestBase {
             defaultPage.openPage();
         });
         step("select incorrect Town" + randomData.incorrectTown, () -> {
-            countryList.chooseCity(randomData.incorrectTown);
+            countryListPage.chooseCity(randomData.incorrectTown);
         });
         step("check incorrect Town", () -> {
-            countryList.checkIncorrectTown();
+            countryListPage.checkIncorrectTown();
         });
     }
 
@@ -38,16 +38,16 @@ public class CityTest extends TestBase {
             defaultPage.openPage();
         });
         step("select correct City" + randomCity, () -> {
-            countryList.chooseCity(randomCity);
+            countryListPage.chooseCity(randomCity);
         });
         step("change City", () -> {
-            countryList.changeCity();
+            countryListPage.changeCity();
         });
         step("select another City" + randomData.town, () -> {
-            countryList.chooseCity(randomData.town);
+            countryListPage.chooseCity(randomData.town);
         });
         step("check City" + randomData.town, () -> {
-            countryList.checkCity(randomData.town);
+            countryListPage.checkCity(randomData.town);
         });
     }
 }

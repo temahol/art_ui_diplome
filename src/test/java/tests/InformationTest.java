@@ -1,7 +1,7 @@
 package tests;
 
 import helpers.AboutUsPage;
-import helpers.CountryList;
+import helpers.CountryListPage;
 import helpers.DefaultPage;
 import helpers.OrderPage;
 import org.junit.jupiter.api.Tag;
@@ -15,7 +15,7 @@ public class InformationTest extends TestBase {
 
 
     DefaultPage defaultPage = new DefaultPage();
-    CountryList countryList = new CountryList();
+    CountryListPage countryListPage = new CountryListPage();
     OrderPage orderPage = new OrderPage();
     RandomData randomData = new RandomData();
     AboutUsPage aboutUsPage = new AboutUsPage();
@@ -27,10 +27,10 @@ public class InformationTest extends TestBase {
             defaultPage.openPage();
         });
         step("select correct City" + randomData.city, () -> {
-            countryList.chooseCity(randomData.city);
+            countryListPage.chooseCity(randomData.city);
         });
         step("check City" + randomData.city, () -> {
-            countryList.checkCity(randomData.city);
+            countryListPage.checkCity(randomData.city);
         });
         step("select item from header menu" + randomData.cookies, () -> {
             orderPage.selectHeaderTab(randomData.aboutUs);
