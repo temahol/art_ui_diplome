@@ -1,0 +1,1 @@
+{"uuid":"9984887c-612c-4854-ac57-a6572cc033e4","name":"CityTest","children":["9b5f6667-db66-4966-a395-9206b3abe5b7"],"befores":[{"name":"beforeAll","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1683209581346,"stop":1683209581372}],"afters":[],"start":1683209581293,"stop":1683209607392}

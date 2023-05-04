@@ -34,8 +34,9 @@ public class TestDodo extends TestBase {
         step("Open the main page of DoDo", () -> {
             pages.openPage();
         });
-        step("select correct City" + randomData.city, () -> {
-            elements.choozeCity(ChoiceCity.randomCity());
+        String randomCity = ChoiceCity.randomCity().getCity();
+        step("select correct City" + randomCity, () -> {
+            elements.choozeCity(randomCity);
         });
         step("change City", () -> {
             elements.changeCity();
