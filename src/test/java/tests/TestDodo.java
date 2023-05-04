@@ -4,6 +4,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import utils.ChoiceCity;
 
 import static io.qameta.allure.Allure.step;
 
@@ -34,7 +35,7 @@ public class TestDodo extends TestBase {
             pages.openPage();
         });
         step("select correct City" + randomData.city, () -> {
-            elements.choozeCity(randomData.city);
+            elements.choozeCity(ChoiceCity.randomCity());
         });
         step("change City", () -> {
             elements.changeCity();

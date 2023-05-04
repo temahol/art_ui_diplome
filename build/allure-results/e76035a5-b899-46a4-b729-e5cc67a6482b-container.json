@@ -1,0 +1,1 @@
+{"uuid":"e76035a5-b899-46a4-b729-e5cc67a6482b","name":"TestDodo","children":["fbd934ba-94d4-4b73-a5ae-f5ec23806b95"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1683142246416,"stop":1683142246555}],"afters":[],"start":1683142246366,"stop":1683142258721}

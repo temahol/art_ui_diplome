@@ -29,7 +29,7 @@ public class Elements {
     }
 
     public Elements changeCity() {
-        $(".header__about-slogan-text_link").click();
+        $("a.header__about-slogan-text_link").click();
 
         return this;
     }
