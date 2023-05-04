@@ -28,7 +28,7 @@ public class CountryList {
     }
 
     public CountryList changeCity() {
-        $("a #about-slogan-text_link").pressEnter();
+        $("a.about-slogan-text_link").pressEnter();
         return this;
     }
 }

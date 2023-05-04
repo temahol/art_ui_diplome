@@ -1,6 +1,7 @@
 package utils;
 
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public enum ChoiceCity {
 
@@ -11,14 +12,16 @@ public enum ChoiceCity {
 
     private final String city;
 
-    private static final Random CITY = new Random();
-
-    public static String randomCity()  {
+    public static ChoiceCity randomCity()  {
         ChoiceCity[] directions = values();
-        return String.valueOf(directions[CITY.nextInt(directions.length)]);
+        return directions[ThreadLocalRandom.current().nextInt(directions.length)];
     }
 
     ChoiceCity(String city) {
         this.city = city;
+    }
+
+    public String getCity() {
+        return city;
     }
 }
