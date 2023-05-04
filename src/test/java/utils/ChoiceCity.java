@@ -5,14 +5,14 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public enum ChoiceCity {
 
-            MOSCOW ("Москва"),
-            TAGAN ("Таганрог"),
-            SPB ("Санкт-Петербург"),
-            ABACAN ("Абакан");
+    MOSCOW("Москва"),
+    TAGAN("Таганрог"),
+    SPB("Санкт-Петербург"),
+    ABACAN("Абакан");
 
     private final String city;
 
-    public static ChoiceCity randomCity()  {
+    public static ChoiceCity randomCity() {
         ChoiceCity[] directions = values();
         return directions[ThreadLocalRandom.current().nextInt(directions.length)];
     }
